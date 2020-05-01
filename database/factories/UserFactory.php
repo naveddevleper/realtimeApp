@@ -3,6 +3,10 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\User;
+use App\Model\Category;
+use App\Model\Question;
+use App\Model\Reply;
+use App\Model\Likes;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
