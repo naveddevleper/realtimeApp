@@ -10,6 +10,7 @@ use App\Model\Reply;
 
 class Reply extends Model
 {
+    protected $guarded = [];
     public function question()
     {
     	return $this->belognsTo(Question::class);
