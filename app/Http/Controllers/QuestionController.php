@@ -8,6 +8,17 @@ use App\Http\Resources\QuestionResource;
 
 class QuestionController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('JWT', ['except' => ['index','show']]);
+    }
+
+    /**
+     * Get a JWT via given credentials.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     /**
      * Display a listing of the resource.
      *
